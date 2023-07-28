@@ -1,0 +1,6 @@
+push 1
+push 2
+add
+cmp_eq 3
+select 1 2
+assert 1

@@ -1,0 +1,35 @@
+; check allocator and size work appropriately
+push 32
+mem_alloc
+mem_size
+assert 32
+
+push 10
+mem_alloc
+
+; try to store to the end of memory
+push 0
+store 0
+
+push 1
+store 1
+
+push 2
+store 2
+
+push 3
+store 3
+
+push 4
+store 4
+
+load 0
+assert 0
+load 1
+assert 1
+load 2
+assert 2
+load 3
+assert 3
+load 4
+assert 4

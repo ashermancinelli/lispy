@@ -1,0 +1,7 @@
+select 1 1 0
+add 0 1
+sub 0 1
+mul 0 1
+div 0 1
+mem_alloc 1024
+mem_size
